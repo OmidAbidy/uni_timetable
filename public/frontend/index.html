@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/home.css" />
+    <link rel="stylesheet" href="styles/all.min.css" />
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <title>Home</title>
+  </head>
+  <body>
+    <header>
+      <section class="left-sect">
+        <div class="logo"><img src="images/logo3.png" alt="" /></div>
+        <ul class="nav-links">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </section>
+      <span class="right-sect">
+        <select id="language">
+          <option value="english" selected>Eng</option>
+          <option value="pashto">پښتو</option>
+          <option value="dari">دری</option>
+        </select>
+        <a href="login.html" class="login-link">Login</a>
+      </span>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="left-section">
+          <h1>Timetable Database</h1>
+          <p>
+            This web application provides information about your timetable.
+            <br />In order to get started you need to login using your user name
+            and password.
+          </p>
+          <span class="text first-text">This website is </span>
+          <span class="text sec-text">Safe</span>
+        </div>
+        <div class="right-section">
+          <i class="fa-solid fa-database custom-size"></i>
+        </div>
+      </section>
+    </main>
+    <p
+      style="
+        text-align: center;
+        font-size: 1.3rem;
+        color: var(--Dark-gray-blue);
+      "
+    >
+      &copy; Kabul Uneversity 2024
+    </p>
+
+    <script>
+      const text = document.querySelector(".sec-text");
+
+      const textLoad = () => {
+        setTimeout(() => {
+          text.textContent = "Reliable";
+        }, 0);
+        setTimeout(() => {
+          text.textContent = "Safe";
+        }, 3000);
+        setTimeout(() => {
+          text.textContent = "Fast";
+        }, 6000);
+      };
+
+      textLoad();
+      setInterval(textLoad, 9000);
+    </script>
+    <script src="styles/all.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+:root {
+  --light-red: hsl(0, 100%, 67%);
+  --orangey-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+
+  --light-slate-blue: hsl(252, 100%, 67%);
+  --light-royal-blue: hsl(241, 81%, 54%);
+
+  --violet-blue: hsla(256, 72%, 46%, 1);
+  --persian-blue: hsla(241, 72%, 46%, 0);
+
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  direction: rtl;
+  padding: 5rem;
+}
+
+select option:disabled {
+  display: none;
+}
+
+h1 {
+  font-size: 2.8rem;
+  color: var(--Dark-gray-blue);
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 2.5rem;
+  color: var(--Dark-gray-blue);
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 3rem;
+  margin-top: 3rem;
+  height: 60vh;
+  border: 1px solid var(--Dark-gray-blue);
+  width: 40rem;
+  border-radius: 20px;
+}
+
+#faculty,
+#department,
+.findBtn {
+  width: 20rem;
+  padding: 0.5rem;
+  outline: none;
+  border-radius: 5px;
+  font-size: 2rem;
+  margin: 2rem;
+}
+
+.findBtn {
+  cursor: pointer;
+  background-color: var(--Dark-gray-blue);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.6rem 0;
+}
+
+.findBtn:hover {
+  opacity: 0.9;
+}

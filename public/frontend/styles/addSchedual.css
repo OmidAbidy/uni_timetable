@@ -1,0 +1,116 @@
+:root {
+  --light-red: hsl(0, 100%, 67%);
+  --orangey-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+
+  --light-slate-blue: hsl(252, 100%, 67%);
+  --light-royal-blue: hsl(241, 81%, 54%);
+
+  --violet-blue: hsla(256, 72%, 46%, 1);
+  --persian-blue: hsla(241, 72%, 46%, 0);
+
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+  direction: rtl;
+}
+
+body {
+  direction: rtl;
+  padding: 5rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  word-spacing: 5px;
+  margin-bottom: 2rem;
+}
+
+header p {
+  font-size: 2rem;
+  word-spacing: 4px;
+}
+
+header {
+  margin-bottom: 4rem;
+  border: 1px solid var(--Dark-gray-blue);
+  border-bottom: none;
+  border-radius: 5px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 2rem;
+}
+
+hr {
+  height: 5px;
+  background-color: var(--Dark-gray-blue);
+  border-radius: 5px;
+}
+
+main {
+  margin-top: 5rem;
+  border: 1px solid var(--Dark-gray-blue);
+  border-top: none;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  height: 55.1vh;
+  padding: 2rem;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  row-gap: 5rem;
+}
+
+form label {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--Dark-gray-blue);
+}
+
+form input,
+form select,
+#submit-btn {
+  width: 20rem;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #000;
+}
+
+#submit-btn {
+  background-color: var(--Dark-gray-blue);
+  color: var(--white);
+  font-size: 1.7rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  outline: none;
+}
+
+#submit-btn:hover {
+  opacity: 0.8;
+}
+
+#submit-btn:active {
+  opacity: 1;
+}
